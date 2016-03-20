@@ -10,6 +10,7 @@ $(function() {
     // loop through array, build sentence for words > 3 letters
     sentenceArray.forEach(function(word) {
       if (word.length >= 3) {
+        // $('.results inline').empty(); // can't clear red text on additional clicks
         wordsThree.push(word);
       } else if (word === '') {
         $('.warpedSentence').hide();
